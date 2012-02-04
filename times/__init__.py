@@ -1,6 +1,9 @@
 import datetime
 import calendar
-import pytz
+try:
+    import pytz
+except ImportError, e:
+    print 'Error importing pytz'
 
 __author__ = 'Vincent Driessen <vincent@3rdcloud.com>'
 __version__ = '0.3'
